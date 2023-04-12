@@ -1,0 +1,39 @@
+#pragma once
+
+enum class Type {
+	Roi,
+	Cavalier,
+	Tour
+};
+
+enum class Couleur {
+	Blanc,
+	Noir
+};
+
+class Piece
+{
+
+public:
+	Piece() = default;
+	Piece(int x, int y, Couleur couleur, Type type);
+	//Piece(const Piece& p);
+	virtual ~Piece();
+	//Piece& operator=(const Piece& p);
+
+	void move(int x, int y);
+	void affiche() const;
+	int getX() const;
+	int getY() const;
+	Couleur getCouleur() const ;
+	virtual bool mouvementValide( int x, int y);
+	bool memePlace(const Piece& p);
+
+protected:
+	int x_;
+	int y_;
+	Type type_;
+	Couleur couleur_;
+};
+
+

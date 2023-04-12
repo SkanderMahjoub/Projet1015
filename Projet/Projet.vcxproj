@@ -140,6 +140,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\..\..\..\Downloads\Classes.hpp" />
+    <ClInclude Include="Cavalier.hpp" />
+    <ClInclude Include="Tour.hpp" />
+    <ClInclude Include="Piece.hpp" />
+    <ClInclude Include="Roi.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cavalier.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Tour.cpp" />
+    <ClCompile Include="Piece.cpp" />
+    <ClCompile Include="Roi.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
