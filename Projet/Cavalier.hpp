@@ -5,6 +5,6 @@ class Cavalier : public Piece
 {
 public:
 	Cavalier(Couleur couleur);
-	bool mouvementValide(int x, int y);
+	bool mouvementValide(int x, int y) override;
 };
 
