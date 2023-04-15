@@ -59,8 +59,3 @@ bool Piece::memePlace(const Piece& p) const
 {
 	return ((x_ == p.getX()) && (y_ == p.getY()));
 }
-
-ostream& (ostream& out, const Piece& p)
-{
-	throw gcnew System::NotImplementedException();
-}
